@@ -43,8 +43,8 @@ install -m 644 LICENSE %{buildroot}%{_licensedir}/%{name}
 %preun
 
 %files
-%{_docdir}/%{name}/README.md
-%{_licensedir}/%{name}/LICENSE
+%doc %{_docdir}/%{name}/README.md
+%license %{_licensedir}/%{name}/LICENSE
 %{_libexecdir}/%{name}/install-flatpak-package.sh
 %{_unitdir}/install-flatpak-package@.service
 
