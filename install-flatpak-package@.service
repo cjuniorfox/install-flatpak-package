@@ -1,0 +1,14 @@
+[Unit]
+Description=Install Flatpak package %i
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/install-flatpak-package/install-flatpak-package.sh %i
+RemainAfterExit=no
+TimeoutSec=0
+
+[Install]
+WantedBy=multi-user.target
+
