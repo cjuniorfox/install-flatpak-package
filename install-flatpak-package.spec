@@ -48,6 +48,7 @@ install -m 644 LICENSE %{buildroot}%{_licensedir}/%{name}
 %{_unitdir}/install-flatpak-package@.service
 
 %changelog
-* Wed Jul 30 2025 Carlos Junior <cjuniorfox@gmail.com> - 1.0-1
+
+* Wed Jul 30 2025 Carlos Junior <cjuniorfox@gmail.com> - 1.0-0
 - Initial release
 

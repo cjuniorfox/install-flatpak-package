@@ -8,7 +8,6 @@
 *.spec~
 
 # Tito tags and metadata
-.tito
 TAGS
 
 # Editor swap and backup files
