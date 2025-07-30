@@ -1,5 +1,5 @@
 Name:           install-flatpak-package
-Version:        1.1
+Version:        0.1
 Release:        1%{?dist}
 Summary:        Systemd service to install Flatpak packages after network becomes available
 
@@ -13,6 +13,7 @@ Requires(post): systemd
 Requires(preun): systemd
 
 BuildArch:      noarch
+BuildRequires:  systemd-rpm-macros
 
 %description
 This package provides a systemd template unit and script that automatically installs
@@ -48,10 +49,7 @@ install -m 644 LICENSE %{buildroot}%{_licensedir}/%{name}
 %{_unitdir}/install-flatpak-package@.service
 
 %changelog
-* Wed Jul 30 2025 Junior <cjuniorfox@gmail.com> 1.1-1
-- new package built with tito
 
-
-* Wed Jul 30 2025 Carlos Junior <cjuniorfox@gmail.com> - 1.0-0
+* Wed Jul 30 2025 Carlos Junior <cjuniorfox@gmail.com> - 0.1-0
 - Initial release
 
