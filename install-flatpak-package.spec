@@ -1,5 +1,5 @@
 Name:           install-flatpak-package
-Version:        1.0
+Version:        1.1
 Release:        1%{?dist}
 Summary:        Systemd service to install Flatpak packages after network becomes available
 
@@ -48,6 +48,9 @@ install -m 644 LICENSE %{buildroot}%{_licensedir}/%{name}
 %{_unitdir}/install-flatpak-package@.service
 
 %changelog
+* Wed Jul 30 2025 Junior <cjuniorfox@gmail.com> 1.1-1
+- new package built with tito
+
 
 * Wed Jul 30 2025 Carlos Junior <cjuniorfox@gmail.com> - 1.0-0
 - Initial release
