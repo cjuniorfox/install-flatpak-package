@@ -26,7 +26,7 @@ fi
 # Wait for internet (up to $TIMEOUT seconds)
 log "Waiting for internet connectivity (timeout: ${TIMEOUT}s)..."
 for ((i=0; i<TIMEOUT; i++)); do
-    if ping -q -c1 -W1 8.8.8.8 &>/dev/null; then
+    if ping -q -c1 -W1 flathub.org &>/dev/null; then
         log "Internet is available."
         break
     fi
