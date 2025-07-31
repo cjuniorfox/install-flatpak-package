@@ -16,7 +16,7 @@ The systemd template service:
 To enable installation of a specific Flatpak package (e.g. Firefox):
 
 ```bash
-sudo systemctl enable 'install-flatpak-package@app/org.mozilla.firefox/x86_64/stable.service'
+sudo systemctl enable 'install-flatpak-package@app-org.mozilla.firefox-x86_64-stable.service'
 ````
 
 Note: enabling the installation of a package, don't forget to escape the systemd parameter using `systemd-escape`.
